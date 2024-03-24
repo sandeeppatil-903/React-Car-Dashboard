@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sandeeppatil-903/React-Car-Dashboard/static/css/main.59ab7aff.css",
+    "main.js": "/sandeeppatil-903/React-Car-Dashboard/static/js/main.3a959f1a.js",
+    "index.html": "/sandeeppatil-903/React-Car-Dashboard/index.html",
+    "main.59ab7aff.css.map": "/sandeeppatil-903/React-Car-Dashboard/static/css/main.59ab7aff.css.map",
+    "main.3a959f1a.js.map": "/sandeeppatil-903/React-Car-Dashboard/static/js/main.3a959f1a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.59ab7aff.css",
+    "static/js/main.3a959f1a.js"
+  ]
+}
