@@ -103,10 +103,6 @@ function Dashboard() {
             {/* <ChartsOverviewDemo /> */}
 
             {/* <LineCharts /> */}
-
-            {/* <div className="image">
-            <img className="car" src={car} alt="" width={1050} height={300} />
-          </div> */}
           </div>
         ) : (
           ""
