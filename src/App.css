@@ -1,38 +1,165 @@
-.App {
-  text-align: center;
+body {
+  background-color: #141b2d;
+  font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.phases {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  transition: all 1s ease-in;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.stages {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 250px;
+  height: 160px;
+  border: 0 solid;
+  border-radius: 30px;
+  background-color: rgba(251, 251, 253, 0.1);
+  transition: all 1s ease-in;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
+
+.externalBtn {
+  font-size: 1rem;
+  font-weight: 400;
   color: white;
+  margin: 0 10px;
+  width: 100px;
+  height: 40px;
+  border: 0 solid;
+  border-radius: 20px;
+  background-color: rgb(85, 229, 202);
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: 2rem;
+  color: rgb(196, 194, 192);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.footer {
+  display: none;
+  margin: auto;
+}
+.show-footer {
+  display: flex;
+}
+.external {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px;
+  margin-left: 50px;
+  width: 300px;
+  height: 400px;
+  background-color: rgba(251, 251, 253, 0.1);
+  border: 0 solid;
+  border-radius: 30px;
+  color: rgb(196, 194, 192);
+}
+.charts {
+  color: antiquewhite;
+  margin: 20px;
+  width: 1100px;
+  height: 400px;
+  background-color: rgba(251, 251, 253, 0.1);
+  border: 0 solid;
+  border-radius: 30px;
+}
+
+.progress-indicator {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  align-items: center;
+  padding-top: 20px;
+}
+.items {
+  font-size: 1rem;
+  font-family: 400;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 40px;
+  border: 0 solid;
+  border-radius: 30px;
+  background-color: rgba(251, 251, 253, 0.1);
+  transition: 0.3s ease-in;
+}
+.active-btn {
+  background-color: rgb(85, 229, 202);
+}
+.btnl {
+  color: rgb(196, 194, 192);
+  width: 260px;
+  height: 150px;
+  border: 0 solid;
+  border-radius: 30px;
+  background-color: rgba(251, 251, 253, 0.1);
+  font-size: 2rem;
+  transition: 0.3s ease-in;
+}
+.btnl-active {
+  background-image: linear-gradient(
+    to left,
+    rgba(184, 0, 216, 0.5),
+    rgba(184, 0, 216, 1)
+  );
+}
+
+.car {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0 solid;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .phases {
+    flex-wrap: wrap;
   }
-  to {
-    transform: rotate(360deg);
+  h1 {
+    font-size: 1rem;
+    color: rgb(196, 194, 192);
+  }
+
+  .stages {
+    margin: 10px;
+    width: 150px;
+    height: 60px;
+  }
+
+  .external {
+    flex-direction: row;
+    margin-left: 0;
+    width: auto;
+    overflow-x: auto;
+    padding: 10px;
+  }
+
+  .charts {
+    width: auto;
+    overflow-x: auto;
+  }
+
+  .btnl {
+    width: auto;
+    margin: 10px;
   }
 }
